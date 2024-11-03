@@ -1,6 +1,6 @@
 env         = "dev"
 domain_name = "venkysiridevops.online"
-zone_id     = "Z02249652EM5BAO495DZ1"
+zone_id     = "Z10227673MRFB0EY34RV8"
 
 db_instances = {
   mongodb = {
