@@ -32,6 +32,7 @@ resource "aws_instance" "instance" {
   tags = {
     Name = "${var.component_name}-${var.env}"
   }
+
   provisioner "remote-exec" {
     connection {
       type     = "ssh"
