@@ -59,3 +59,11 @@ resource "null_resource" "ansible-pull" {
 
   }
 }
+
+resource "aws_route53_record" "record" {
+  zone_id = var.zone_id
+  name = "${var.component_name}-${var.env}.${var.domain_name}"
+  type = "A"
+  ttl = "30"
+  records = [aws_instance.instance.public_ip]
+}
